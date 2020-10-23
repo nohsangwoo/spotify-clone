@@ -8,7 +8,7 @@ import { useStateValue } from "./StateProvider";
 
 const spotify = new SpotifyWebApi();
 function App() {
-  const [{ user, token }, dispatch] = useStateValue();
+  const [{ user, token, playlists }, dispatch] = useStateValue();
 
   useEffect(() => {
     const hash = getTokenFromResponse();
@@ -27,17 +27,33 @@ function App() {
 
       // 로그인 한 유저의 정보를 받아옴
       spotify.getMe().then((user) => {
-        console.log("user>>>", user);
+        // console.log("user>>>", user);
 
         dispatch({
           type: "SET_USER",
           user: user,
         });
       });
-    }
-  }, [token]);
 
-  console.log("user", user);
+      spotify.getPlaylist("3i4fufWchhstA0aeN1B7ue").then((response) =>
+        dispatch({
+          type: "SET_DISCOVER_WEEKLY",
+          discover_weekly: response,
+        })
+      );
+
+      spotify.getUserPlaylists().then((playlists) => {
+        console.log("playlists in app", playlists);
+        dispatch({
+          type: "SET_PLAYLISTS",
+          playlists: playlists,
+        });
+      });
+    }
+  }, [user, playlists, token, dispatch]);
+
+  // console.log("user in app", user);
+  // console.log("playlists in app", playlists);
   return (
     // BEM
     <div className="App">
