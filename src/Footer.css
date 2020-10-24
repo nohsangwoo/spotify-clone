@@ -8,6 +8,9 @@
   background-color: #282828;
   padding: 20px;
 }
+.footer__right * .MuiSlider-root {
+  color: green;
+}
 
 .footer__left {
   flex: 0.3;
