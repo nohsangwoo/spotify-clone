@@ -6,12 +6,9 @@ import HomeIcon from "@material-ui/icons/Home";
 import SearchIcon from "@material-ui/icons/Search";
 import LibraryMusicIcon from "@material-ui/icons/LibraryMusic";
 import { useStateValue } from "./StateProvider";
-import { getTokenFromResponse } from "./spotify";
+
 function Sidebar() {
-  const [
-    { playlists, token, playing, user, discover_weekly },
-    dispatch,
-  ] = useStateValue();
+  const [{ playlists, discover_weekly }, dispatch] = useStateValue();
 
   console.log("discover_weekly", discover_weekly);
   return (
