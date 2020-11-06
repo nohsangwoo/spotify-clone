@@ -8,9 +8,9 @@
 > spotify api를 사용방법을 익힘
 > 한국에선 서비스 불가하여(2020.11.07기준) vpn을 사용하여 구현함
 
----
-
 ### 구현 동작
+
+![1-request_login](./README_IMAGE/1-request_login.png)
 
 https://user-images.githubusercontent.com/57750190/98417368-26b4e400-20c4-11eb-8391-5c820368e4f9.png
 https://user-images.githubusercontent.com/57750190/98417376-29afd480-20c4-11eb-8af6-79c21b319080.png
