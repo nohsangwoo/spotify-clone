@@ -11,8 +11,6 @@
 ### 구현 동작
 
 ![1-request_login](./README_IMAGE/1-request_login.png)
-
-https://user-images.githubusercontent.com/57750190/98417368-26b4e400-20c4-11eb-8391-5c820368e4f9.png
-https://user-images.githubusercontent.com/57750190/98417376-29afd480-20c4-11eb-8af6-79c21b319080.png
-https://user-images.githubusercontent.com/57750190/98417379-2a486b00-20c4-11eb-930a-3a9110c30d8e.png
-https://user-images.githubusercontent.com/57750190/98417382-2ae10180-20c4-11eb-83a3-8f595719c02e.png
+![2-login_page](./README_IMAGE/2-login_page.png)
+![3-permission_allow_page](./README_IMAGE/3-permission_allow_page.png)
+![4-main_page](./README_IMAGE/4-main_page.png)
