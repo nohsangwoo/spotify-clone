@@ -2,7 +2,7 @@
 
 ### 프로젝트 계획
 
-> spotify를 클론 코딩하며 react hooks의 연습
+> spotify를 클론 코딩하며 react hooks의 연습<br/>
 > spotify api를 사용하여 로그인 및 데이터가져오는 방법을 익힘
 > material UI 및 material Icon을 사용해보며 css 프레임워크 사용법을 익힘
 > createContext, useContext, useReducer 등을 사용해보며 global state 관리 방법을 익힘
